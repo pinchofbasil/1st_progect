@@ -1,0 +1,92 @@
+
+/*Обнулення*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+:root{
+	--color-brand-light: #819B57;
+	--color-brand-dark: #465929;
+	--color-primary-light: #FAF4EA;
+	--color-primary-dark: #31261A;
+}
+
+body{
+	color: var(--color-primary-dark);
+	background-color: #e9e8dfcb;
+}
+
+.button{
+	color: var(--color-primary-light);
+	background-color: var(--color-brand-light);
+	border: 2px solid var(--color-brand-light);
+	border-radius: 8px;
+}
+
+.button:hover{
+	color: var(--color-brand-dark);
+	background-color: transparent;
+}
+
+.link{
+	color: var(--color-primary-light);
+}
+
+.link:hover{
+	color: var(--color-brand-light);
+}
+
+.hero-title{
+	color: var(--color-primary-light);
+}
+
+.hero-title .accent{
+	color: var(--color-brand-light);
+}
+
+.advant-list{
+	color: var(--color-primary-light);
+	background-color: var(--color-brand-light);
+}
+
+.section-title{
+	color: var(--color-primary-dark);
+}
+
+.section-title .accent{
+	color: var(--color-brand-dark);
+}
