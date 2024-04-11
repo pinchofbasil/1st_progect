@@ -77,7 +77,7 @@ h6 {
   font-size: inherit;
   font-weight: 400;
 }
-/*--------------------*/
+/*------------------------------------------*/
 
 :root {
   --color-brand-light: #819b57;
@@ -115,7 +115,9 @@ address {
   padding: 48px 0;
 }
 
+/* Button section<-----------------------------*/
 .button {
+  padding: 16px 32px;
   color: var(--color-primary-light);
   background-color: var(--color-brand-light);
   border: 2px solid var(--color-brand-light);
@@ -128,6 +130,7 @@ address {
   background-color: transparent;
 }
 
+/* Link section<-----------------------------*/
 .link {
   color: var(--color-primary-light);
 }
@@ -137,6 +140,30 @@ address {
   font-weight: 600;
 }
 
+/* Header section<-----------------------------*/
+.header-container{
+  display: flex;
+  align-content: center;
+  gap: 40px;
+
+
+}
+
+.header-nav{
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 40px;
+}
+.header-menu{
+  display: flex;
+  gap: 64px;
+  flex-grow: 1;
+  justify-content: center;
+  
+}
+
+/* HERO section<-----------------------------*/
 .hero-section{
   padding: 272px 0;
 }
@@ -152,12 +179,20 @@ address {
   color: var(--color-brand-light);
 }
 
-.advant-list {
-  color: var(--color-primary-light);
+/* Advent section<-----------------------------*/
+.advantages-section{
+  padding: 16px 0;
   background-color: var(--color-brand-light);
 }
 
+.advant-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
 .advent-item {
+  color: var(--color-primary-light);
   font-size: 20px;
   font-weight: 300;
 }
@@ -173,8 +208,19 @@ address {
   color: var(--color-brand-dark);
 }
 
+/* Traditions section<-----------------------------*/
 .traditions-section{
   padding-top: 96px;
+}
+
+.traditions-container{
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.traditions-content{
+  min-width: 710px;
 }
 
 .traditions-title{
@@ -190,6 +236,10 @@ address {
   text-transform: uppercase;
 }
 
+.traditions-text.limited{
+  min-width: 340px;
+}
+
 .chefs-title{
   margin-bottom: 80px;
 }
@@ -197,6 +247,24 @@ address {
 .chef-title {
   font-size: 40px;
   font-weight: 600;
+}
+
+/* Format section<-----------------------------*/
+.formats-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.formats-item{
+  flex-basis: calc((100% - 40px)  / 3);
+}
+
+.format-card{
+  padding: 24px;
+  border: 1px solid lightgray; /*remove*/
+  border-radius: 16px;
+  min-height: 100%;
 }
 
 .formats-title{
@@ -208,9 +276,9 @@ address {
   font-weight: 600;
 }
 
-.format-test {
+.format-text {
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 300; /*lessson 8 in this column was font-weight: 300*/
 }
 
 .contact-title{
