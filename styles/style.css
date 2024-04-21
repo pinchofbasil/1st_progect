@@ -312,10 +312,31 @@ address {
   font-weight: 300; /*lessson 8 in this column was font-weight: 300*/
 }
 
+/* Carousel section<-----------------------------*/
+.carousel-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  fill: var(--color-primary-brown);
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid var(--color-primary-brown);
+  cursor: pointer;
+}
+
+.carousel-button:hover {
+  background-color: var(--color-primary-brown);
+  fill: var(--color-primary-light);
+}
+
+/* Contact section<-----------------------------*/
 .contact-title {
   margin-bottom: 16px;
 }
 
+/* Footer section<-----------------------------*/
 .address-link {
   color: var(--color-primary-light);
   font-size: 16px;
@@ -325,6 +346,14 @@ address {
 
 .address-link:hover {
   color: var(--color-primary-green);
+}
+
+.address-icon {
+  fill: var(--color-primary-light);
+}
+
+.address-icon:hover {
+  fill: var(--color-primary-green);
 }
 
 .address-copyright {
@@ -339,3 +368,9 @@ address {
   background-position: center top;
   background-size: cover;
 }
+
+/*
+git add .
+git commit -m 'description'
+git push
+*/
